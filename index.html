@@ -7,7 +7,7 @@
 
   <body>
     <div id="game">
-      <div id="dodger" style="bottom: 0px; left: 180px;"></div>
+      <div id="dodger" style="bottom: 0px; left: 180px; right:auto"></div>
     </div>
     <script>
     var dodger = document.getElementById('dodger');
@@ -19,6 +19,17 @@ function moveDodgerLeft() {
   if (left > 0) {
     dodger.style.left = `${left - 1}px`
   }
+}
+function moveDodgerright()
+{
+  var leftPosition = dodger.style.left.replace('px', '');
+  var leftP = parseInt(leftPosition, 10);
+  
+  if(dodger.right.style > 0)
+  {
+    
+  }
+  
 }
 
 
