@@ -36,7 +36,14 @@ function moveDodgerright()
 
 function moveDogerUp()
 {
+  var bottomPosition = dodger.style.bottom.replace('px', '');
   
+  var btm = parseInt(bottomPosition, 10);
+  
+  if(btm < 360)
+  {
+    dodger.style.bottom = `${btm + 1}px`;
+  }
 }
 
 
